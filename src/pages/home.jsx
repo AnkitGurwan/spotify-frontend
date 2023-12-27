@@ -88,7 +88,7 @@ const Home = () => {
                 :
                 <SpotifyHome/>}
 
-                <div className='w-full my-4 grid grid-cols-1 md:grid-cols-3 text-white'>
+                <div className='w-full my-4 grid grid-cols-1 md:grid-cols-3 text-white gap-2'>
                     <Netflix/>
                     <Prime/>
                     <YouTube/>
