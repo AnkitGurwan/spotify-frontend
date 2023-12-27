@@ -2,7 +2,7 @@ import React from 'react'
 
 const prime = () => {
   return (
-        <div className='md:w-1/3 p-2 md:p-4 bg-gray-900 bg-opacity-50 rounded-xl md:mr-4'>
+        <div className='p-2 md:p-4 bg-gray-900 bg-opacity-50 rounded-xl md:mr-4'>
             <div className='mb-2 flex items-center'>
                 <img className='h-8 w-8 mr-2 rounded-lg' src='https://upload.wikimedia.org/wikipedia/commons/b/bb/Prime_logo.png'/>
                 <div>Prime</div>

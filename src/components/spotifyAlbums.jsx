@@ -56,13 +56,13 @@ export const SpotifyAlbums = (album) => {
         <div>
             <div className='text-black rounded-xl my-4' >
                 <div className='rounded-t-xl' style={{"background-image":"url(https://i.pinimg.com/originals/ea/3d/1b/ea3d1b7f86b841a6b2a4bc85e01e4125.jpg)","objectFit":"cover"}}>
-                    <div className='backdrop-blur-sm flex rounded-t-xl'>
-                        <div className='w-[30%] rounded-t-xl rounded-r-none '>
+                    <div className='backdrop-blur-sm flex flex-col md:flex-row rounded-t-xl'>
+                        <div className='w-full md:w-[30%] rounded-t-xl rounded-r-none '>
                             <div className='p-5'>
                                 <img className='rounded-xl' src='https://linkstorage.linkfire.com/medialinks/images/e423594e-d975-4a5d-a428-1a15c8821c5a/artwork-440x440.jpg' alt='Singer'/>
                             </div>
                         </div>
-                        <div className='w-[45%] py-5 pr-3 text-white'>
+                        <div className='w-full md:w-[45%] py-5 pr-3 text-white'>
                             <div className='bg-gray-950 bg-opacity-50 h-full rounded-xl p-5'>
                                 <div className='flex mb-4'>
                                     <img className='h-24 w-24 rounded-xl object-cover' src='https://consequence.net/wp-content/uploads/2023/08/Karan-Aujla-photo-by-Navier-Grimes.jpg'/>
@@ -102,7 +102,7 @@ export const SpotifyAlbums = (album) => {
                                 
                             </div>
                         </div>
-                        <div className='w-[25%] py-5 pl-2 pr-5 text-white'>
+                        <div className='w-full md:w-[25%] py-5 pl-2 pr-5 text-white'>
                             <div className='bg-gray-950 bg-opacity-50 h-full rounded-xl p-5' >
                                 <div className='mb-4 font-bold'>Lyrics</div>
                                 <div className='text-xs tracking-wider'>

@@ -11,11 +11,11 @@ const navbar = () => {
                     
                 </div>
                 <div className='flex justify-center items-center mx-2 md:mx-36'>
-                    <input className='py-2 px-2 md:px-4 text-sm md:text-lg rounded-xl w-28 md:w-80 bg-gray-900 bg-opacity-30 outline-none text-gray-400 capitalize' placeholder='Search' autoFocus/>
+                    <input className='py-2 px-2 text-center md:px-4 text-sm md:text-lg rounded-xl w-20 md:w-80 bg-gray-900 bg-opacity-30 outline-none text-gray-400 capitalize' placeholder='Search' autoFocus/>
                 </div>
                 <div className='flex items-center'>
-                    <div className='mx-1 md:mx-2 bg-gray-900 p-1 md:p-2  text-sm md:text-lg rounded-lg bg-opacity-40 text-gray-400 hover:text-gray-300 '>Tue, 27 Nov, 2023</div>
-                    <i class="fa-regular fa-bell mx-1mx-2  text-lg md:text-2xl text-gray-400 hover:text-gray-300 cursor-pointer hover:scale-105"></i>
+                    <div className='mx-1 md:mx-2 bg-gray-900 p-1 md:p-2  text-xs md:text-lg rounded-lg bg-opacity-40 text-gray-400 hover:text-gray-300 '>Tue, 27 Nov, 2023</div>
+                    <i class="fa-regular fa-bell mx-1 md:mx-2  text-lg md:text-2xl text-gray-400 hover:text-gray-300 cursor-pointer hover:scale-105"></i>
                 </div>
             </div>
   )
