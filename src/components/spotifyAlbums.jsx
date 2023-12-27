@@ -76,7 +76,7 @@ export const SpotifyAlbums = (album) => {
                                     </div>
                                 </div>
                                 
-                                <div className='h-[7.5rem] overflow-y-scroll'>
+                                <div className='h-[9rem] md:h-[7.5rem] overflow-y-scroll'>
                                 {
                                 loading
                                 ?
