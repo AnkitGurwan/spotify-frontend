@@ -68,7 +68,7 @@ export const SpotifyAlbums = (album) => {
                                     <img className='h-24 w-24 rounded-xl object-cover' src='https://consequence.net/wp-content/uploads/2023/08/Karan-Aujla-photo-by-Navier-Grimes.jpg'/>
                                     <div className='flex flex-col m-2'>
                                         <div className='text-xs my-1'>Playlist</div>
-                                        <div className='text-lg my-1 font-semibold'>{album.name}</div>
+                                        <div className='text-sm md:text-lg my-1 font-semibold'>{album.name}</div>
                                         <div className='flex text-xs my-1'>
                                             <div className=''>12 songs,</div>
                                             <div className='px-1'>1 hr 08 min</div>
@@ -124,22 +124,22 @@ export const SpotifyAlbums = (album) => {
                     </div>
                 </div>
                 <div className='flex justify-between items-center bg-black rounded-b-xl p-3 bg-opacity-40 text-gray-200'>
-                    <div className='flex items-center justify-center font-semibold text-2xl mx-3'>
-                        <div><i class="fa-brands fa-spotify text-2xl mx-3"></i></div>
+                    <div className='flex items-center justify-center font-semibold text-xl md:text-2xl mx-2 md:mx-3'>
+                        <div><i class="fa-brands fa-spotify text-xl md:text-2xl mx-2 md:mx-3"></i></div>
                         <div>Spotify</div>
                     </div>
                     <div className='flex'>
                         <div>
-                            <i class="fa-solid fa-angles-left text-2xl mx-3 hover:text-white hover:scale-105 cursor-pointer"></i>
+                            <i class="fa-solid fa-angles-left text-xl md:text-2xl mx-2 md:mx-3 hover:text-white hover:scale-105 cursor-pointer"></i>
                         </div>
                         <div>
                         {!pause?
-                            <i onClick={()=>{setPause(!pause);handlePlay()}} class="w-4 fa-solid fa-play text-2xl mx-3 hover:text-white cursor-pointer"></i>
+                            <i onClick={()=>{setPause(!pause);handlePlay()}} class="w-4 fa-solid fa-play text-xl md:text-2xl mx-2 md:mx-3 hover:text-white cursor-pointer"></i>
                             :
-                            <i onClick={()=>{setPause(!pause);handlePause();}} class="w-4 fa-solid fa-pause text-2xl mx-3 hover:text-white cursor-pointer"></i>}
+                            <i onClick={()=>{setPause(!pause);handlePause();}} class="w-4 fa-solid fa-pause text-xl md:text-2xl mx-2 md:mx-3 hover:text-white cursor-pointer"></i>}
                         </div>
                         <div>
-                            <i class="fa-solid fa-angles-right text-2xl mx-3 hover:text-white hover:scale-105 cursor-pointer"></i>
+                            <i class="fa-solid fa-angles-right text-xl md:text-2xl mx-2 md:mx-3 hover:text-white hover:scale-105 cursor-pointer"></i>
                         </div>
                     </div>
                 </div>
