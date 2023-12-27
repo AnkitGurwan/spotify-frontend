@@ -24,7 +24,7 @@ const Home = () => {
             },
             body : JSON.stringify({code})
         }
-        const response = await fetch("http://localhost:5000/login",options);
+        const response = await fetch("https://spotify-2qc7.onrender.com/login",options);
 
         if(response.status != 400)
         {
@@ -60,7 +60,7 @@ const Home = () => {
                     response_type: 'code',
                     client_id: "3e12eaa298f54ea0bbcb4abb09dd2af2",
                     scope: scope,
-                    redirect_uri: "http://localhost:3000/"
+                    redirect_uri: "https://spotify-frontend-liard.vercel.app/"
                     })}`
         window.location.href = url;
     }

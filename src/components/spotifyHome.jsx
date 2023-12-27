@@ -17,7 +17,7 @@ const SpotifyHome = () => {
             }
         }
         // console.log(accessToken)
-        const response = await fetch(`http://localhost:5000/albums/${accessToken}`,options);
+        const response = await fetch(`https://spotify-2qc7.onrender.com/albums/${accessToken}`,options);
         const json = await response.json();
         
         setLoading(false);

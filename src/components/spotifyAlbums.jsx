@@ -14,7 +14,7 @@ export const SpotifyAlbums = (album) => {
                 "Content-Type" : " application/json"
             }
         }
-        const response = await fetch(`http://localhost:5000/tracks/${accessToken}/${album.name}`,options);
+        const response = await fetch(`https://spotify-2qc7.onrender.com/tracks/${accessToken}/${album.name}`,options);
 
         const json = await response.json();
         setSongs(json);
