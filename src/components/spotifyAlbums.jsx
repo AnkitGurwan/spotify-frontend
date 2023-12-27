@@ -85,7 +85,7 @@ export const SpotifyAlbums = (album) => {
                                 songs.length && songs.map((song) =>{
                                     return (<div onClick={()=>{setCurrentSong(song);setPause(false)}}  className="px-1 rounded-sm hover:bg-gray-900 hover:bg-opacity-40 cursor-pointer flex justify-between items-center my-3">
                                                 <div className='flex flex-col'>
-                                                    <div className='text-[0.75rem] w-40 font-semibold'>{song.name}</div>
+                                                    <div className='text-[0.75rem] w-32 md:w-40 font-medium md:font-semibold'>{song.name}</div>
                                                     <div className='flex items-center text-[0.6rem] '>
                                                         <i class="fa-brands fa-spotify text-sm mr-1"></i>
                                                         <div>{song.artists}</div>
