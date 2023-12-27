@@ -66,8 +66,8 @@ const Home = () => {
     }
 
     return (
-        <div className='py-6 px-16 h-screen' style={{"background-image":"url(https://images.unsplash.com/photo-1515542706656-8e6ef17a1521?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9tZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D)"}}>
-            <div className='overflow-y-scroll h-[29rem] w-full bg-opacity-30 rounded-xl bg-gray-950 round py-6 px-12' style={{"fontFamily":"Manrope"}}>
+        <div className='py-3 md:py-6 px-4 md:px-16 h-screen' style={{"background-image":"url(https://images.unsplash.com/photo-1515542706656-8e6ef17a1521?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9tZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D)"}}>
+            <div className='overflow-y-scroll h-[29rem] w-full bg-opacity-30 rounded-xl bg-gray-950 round py-3 md:py-6 px-2 md:px-12' style={{"fontFamily":"Manrope"}}>
                 
                 <Navbar/>
                 {
@@ -78,17 +78,17 @@ const Home = () => {
                 !auth
                 ?
                 <div>
-                    <div className='my-4 bg-green-500 bg-opacity-70 rounded-lg p-8 flex justify-center items-center cursor-pointer'>
-                        <div onClick={loginHandler} className='flex text-green-400 font-semibold text-lg p-2 rounded-md bg-black hover:text-green-500'>
-                            <i class="fa-brands fa-spotify text-2xl mx-2 hover:text-gray-300 cursor-pointer hover:scale-105"></i>
-                            <div>Connect with Spotify</div>
+                    <div className='my-2 md:my-4 bg-green-500 bg-opacity-70 rounded-lg p-2 md:p-8 flex justify-center items-center cursor-pointer'>
+                        <div onClick={loginHandler} className='flex items-center text-green-400 font-semibold text-lg p-1 md:p-2 rounded-md bg-black hover:text-green-500'>
+                            <i class="fa-brands fa-spotify text-2xl mx-1 md:mx-2 hover:text-gray-300 cursor-pointer hover:scale-105"></i>
+                            <div className=' text-sm md:text-lg'>Connect with Spotify</div>
                         </div>
                     </div>
                 </div>
                 :
                 <SpotifyHome/>}
 
-                <div className='my-4 flex text-white'>
+                <div className='w-full my-4 grid grid-cols-1 md:grid-cols-3 text-white'>
                     <Netflix/>
                     <Prime/>
                     <YouTube/>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const youtube = () => {
   return (
-        <div className='w-1/3 p-4 bg-gray-900 bg-opacity-50 rounded-xl'>
+        <div className='md:w-1/3 p-4 bg-gray-900 bg-opacity-50 rounded-xl'>
             <div className='mb-2 flex items-center'>
                 <i class="fa-brands fa-youtube text-2xl mx-2"></i>
                 <div>YouTube</div>
