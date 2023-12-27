@@ -3,7 +3,7 @@ import React from 'react'
 const navbar = () => {
   return (
         <div className='flex items-center'>
-                <div className='bg-gray-900 bg-opacity-40 md:h-12 w-fit p-1 md:p-2 rounded-xl md:rounded-full text-gray-400 grid grid-cols-2 md:grid-cols-4'>
+                <div className='bg-gray-900 bg-opacity-40 md:h-12 w-fit p-1 md:p-2 rounded-xl md:rounded-full text-gray-400 grid grid-cols-2 md:grid-cols-4 gap-1'>
                     <i class="fa-brands fa-youtube text-sm md:text-2xl mx-1 md:mx-2 hover:text-gray-300 cursor-pointer hover:scale-105"></i>
                     <i class="fa-brands fa-spotify text-sm md:text-2xl mx-1 md:mx-2 hover:text-gray-300 cursor-pointer hover:scale-105"></i>
                     <i class="fa-brands fa-facebook text-sm md:text-2xl mx-1 md:mx-2 hover:text-gray-300 cursor-pointer hover:scale-105"></i>
