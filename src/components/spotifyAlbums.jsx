@@ -127,7 +127,6 @@ export const SpotifyAlbums = (album) => {
                     <div className='flex items-center justify-center font-semibold text-2xl mx-3'>
                         <div><i class="fa-brands fa-spotify text-2xl mx-3"></i></div>
                         <div>Spotify</div>
-                        <div className='mx-2 text-lg'>(Check Albums)</div>
                     </div>
                     <div className='flex'>
                         <div>
@@ -147,14 +146,14 @@ export const SpotifyAlbums = (album) => {
             </div>
 
             {currentSong && <div className='fixed bottom-0 left-0 bg-gray-950 bg-opacity-50 w-full text-gray-300'>
-                <div className='flex justify-between mx-8 p-3'>
+                <div className='flex justify-between mx-4 md:mx-8 p-3'>
                     <div className='flex items-center'>
                         <audio  ref={audioRef} src={currentSong.previewUrl}/>
                         <div className='flex items-center'>
                             {!pause?
-                            <i onClick={()=>{setPause(!pause);handlePlay()}} class="w-4 fa-solid fa-play text-2xl mx-3 hover:text-white cursor-pointer"></i>
+                            <i onClick={()=>{setPause(!pause);handlePlay()}} class="w-4 fa-solid fa-play text-2xl mx-4 md:mx-3 hover:text-white cursor-pointer"></i>
                             :
-                            <i onClick={()=>{setPause(!pause);handlePause();}} class="w-4 fa-solid fa-pause text-2xl mx-3 hover:text-white cursor-pointer"></i>}
+                            <i onClick={()=>{setPause(!pause);handlePause();}} class="w-4 fa-solid fa-pause text-2xl mx-4 md:mx-3 hover:text-white cursor-pointer"></i>}
                             <div>{currentSong.name}</div>
                         </div>
                     </div>
