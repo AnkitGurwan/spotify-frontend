@@ -76,11 +76,11 @@ export const SpotifyAlbums = (album) => {
                                     </div>
                                 </div>
                                 
-                                <div className='h-[10.5rem] md:h-[7.5rem] overflow-y-scroll'>
+                                <div className='h-[11.5rem] md:h-[7.5rem] overflow-y-scroll'>
                                 {
                                 loading
                                 ?
-                                <div className='mt-4 bg-gray-900 bg-opacity-50 rounded-xl p-4 text-gray-300 text-center'>Loading...</div>
+                                <div className='mt-4 bg-gray-900 bg-opacity-50 rounded-xl p-3 md:p-4 text-gray-300 text-center'>Loading...</div>
                                 :
                                 songs.length && songs.map((song) =>{
                                     return (<div onClick={()=>{setCurrentSong(song);setPause(false)}}  className="px-1 rounded-sm hover:bg-gray-900 hover:bg-opacity-40 cursor-pointer flex justify-between items-center my-3">
